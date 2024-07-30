@@ -8,9 +8,9 @@ describe('My Login application', () => {
     it('should create a new user', async () => {
         await homePage.openMenu('profile')
         await homePage.openForm('Sign up')
-        await loginPage.login('Karina', 'Macedo', '11976413698', 'anirak1@ig.com.br', '123456', '123456')
+        await loginPage.login('Rute', 'Avila', '1140028922', 'test@test.com', '123456', '123456')
         await homePage.openMenu('profile')
-        expect ((await profilePage.profileName('Karina Macedo')).isDisplayed()).toBeTruthy
+        expect ((await profilePage.profileName('Rute Avila')).isDisplayed()).toBeTruthy
     })
 })
 
